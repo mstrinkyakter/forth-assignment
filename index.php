@@ -6,7 +6,7 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="server.php" method="get">
+    <form action="server.php" method="POST">
         <input type="text" name="marks">
         <input type="submit" name="submit">
     </form>
