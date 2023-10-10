@@ -1,13 +1,7 @@
 <?php
-$db_name="mysql:host=localhost;dbname=crud";
-$username="root";
-$password="";
+$conn=new mysqli('localhost','root','','test');
+if(!$conn){
+    die(mysqli_error($conn));
+}
 
-$conn=new PDO($db_name,$username,$password);
-if($conn){
-    echo "connect";
-}
-else{
-    echo "not connect";
-}
 ?>
